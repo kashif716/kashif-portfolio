@@ -17,78 +17,69 @@ const navItems = [
 const resumeUrl = `${import.meta.env.BASE_URL}Kashif-Ali-Resume.pdf`
 
 const skills = [
-  ['AWS Cloud', ['EC2', 'S3', 'RDS', 'IAM', 'VPC', 'Route 53', 'ECR', 'ECS', 'ELB', 'Auto Scaling', 'CloudWatch', 'CloudFront', 'SNS', 'SQS', 'Lambda', 'API Gateway', 'Secrets Manager']],
+  ['Cloud (AWS)', ['EC2', 'S3', 'RDS', 'IAM', 'VPC', 'Route 53', 'ECR', 'ECS', 'ELB', 'Auto Scaling', 'CloudWatch', 'CloudFront', 'SNS', 'SQS', 'Lambda', 'API Gateway', 'Secrets Manager']],
+  ['Other Cloud Platforms', ['Vercel', 'Fly.io']],
   ['CI/CD', ['Jenkins', 'GitHub Actions', 'AWS CodePipeline', 'AWS CodeBuild', 'Bitbucket Pipelines']],
-  ['Containers & Orchestration', ['Docker', 'Docker Compose', 'Kubernetes', 'Amazon EKS', 'Helm']],
-  ['Infrastructure & Automation', ['Ansible', 'Terraform (Basic)', 'Python (Basic)', 'Bash (Basic)']],
-  ['Version Control & Web Servers', ['Git', 'GitHub', 'Bitbucket', 'Nginx', 'Apache']],
-  ['Networking & Monitoring', ['Subnets', 'Security Groups', 'Load Balancers', 'AWS CloudWatch', 'Log Management']],
+  ['Containerization', ['Docker', 'Docker Compose', 'Amazon ECR', 'Amazon EKS', 'Kubernetes', 'Helm']],
+  ['Infrastructure as Code', ['Ansible', 'Terraform (basic)']],
+  ['Monitoring & Logging', ['AWS CloudWatch', 'log management tools']],
+  ['Version Control', ['Git', 'GitHub', 'Bitbucket']],
+  ['Web Servers & Scripting', ['Nginx', 'Apache', 'Python', 'Bash']],
+  ['Networking & Databases', ['VPC', 'Subnets', 'Security Groups', 'Load Balancers', 'MySQL', 'non-relational databases']],
 ]
 
 const experience = [
   {
     date: 'Mar 2025 – May 2026',
-    role: 'DevOps & Cloud Engineer',
+    role: 'DevOps ',
     company: 'ZAD Technologies · Lahore, Pakistan',
     points: [
-      'Designed and maintained CI/CD pipelines using Jenkins and GitHub Actions to automate build and deployment processes.',
-      'Containerized applications with Docker and Docker Compose to ensure consistency across environments.',
-      'Managed AWS infrastructure including EC2, RDS, S3, IAM, and VPC.',
-      'Automated server configuration and application deployment using Ansible.',
-      'Monitored system performance and implemented logging for proactive issue detection.',
-      'Troubleshot build, deployment, and infrastructure issues to keep operations running smoothly.',
+      'Built and maintained CI/CD pipelines using Jenkins and GitHub Actions to automate builds and deployments.',
+      'Containerized applications with Docker and Docker Compose for consistent multi-environment deployments.',
+      'Managed AWS infrastructure — EC2, RDS, S3, IAM, and VPC — for reliable application hosting.',
+      'Automated server configuration and deployments using Ansible.',
+      'Set up CloudWatch monitoring and logging for proactive issue detection.',
+      'Troubleshot build, deployment, and infrastructure issues to minimize downtime.',
     ],
   },
 ]
 
 const certifications = [
-  ['Education', ['BS Computer Science — Virtual University of Pakistan', 'ICS (Computer Science) — Aspire College, Basirpur, Okara', 'Matriculation (Computer Science) — Govt. High School Basirpur, Okara']],
-  ['Certifications & Training', ['DevOps Bootcamp — TrainWithShubham (XVVTFJMP)', 'AWS: Zero to Hero — TrainWithShubham (V5RLBDVE)', 'Computer Networking — TrainWithShubham (WZETW0MH)', 'Git & GitHub Certification — TrainWithShubham (SQJM58H5)', 'DevOps & AWS Program — Udemy', 'DevOps Training — YouTube (Self-Learning)']],
+  ['Education', ['BS Computer Science — Virtual University of Pakistan', 'ICS (Computer Science) — Aspire College, Okara', 'Matriculation (Computer Science) — Govt. High School, Okara']],
+  ['Certifications', ['AWS Certified Cloud Practitioner — Amazon Web Services', 'DevOps Bootcamp — TrainWithShubham', 'AWS Zero to Hero — TrainWithShubham', 'Computer Networking — TrainWithShubham', 'Git & GitHub Certification — TrainWithShubham', 'Linux — TrainWithShubham']],
   ['Languages', ['Urdu — Full Professional Proficiency', 'English — Working Proficiency']],
 ]
 
 const projects = [
   {
     icon: ServerCog,
-    title: 'PitchPlaylist – Full Stack Cloud Deployment',
-    description: 'Designed a Bitbucket Pipelines CI/CD workflow, built and pushed Docker images to Amazon ECR, deployed the application on EC2, and hosted the frontend on Amazon S3.',
-    tags: ['Bitbucket Pipelines', 'Docker', 'ECR', 'EC2', 'S3'],
+    title: 'PitchPlaylist — Full-Stack Cloud Deployment',
+    description: 'Designed and deployed a full-stack application using Bitbucket Pipelines for end-to-end CI/CD automation. Built Docker images, pushed them to Amazon ECR, and deployed to EC2 while hosting the frontend on Amazon S3.',
+    tags: ['Bitbucket Pipelines', 'Docker', 'Amazon ECR', 'EC2', 'S3'],
   },
   {
     icon: ServerCog,
-    title: 'Two-Tier Flask Application on AWS EKS',
-    description: 'Built a Flask and MySQL application in separate containers, published the images to Docker Hub, and deployed to Amazon EKS with Kubernetes, Helm, Jenkins, and GitHub CI/CD.',
-    tags: ['Flask', 'MySQL', 'EKS', 'Kubernetes', 'Helm', 'Jenkins'],
-  },
-  {
-    icon: Code2,
-    title: 'Two-Tier Flask Application',
-    description: 'Built a Flask application with a MySQL database using a two-tier architecture, then containerized and deployed it with Docker and CI/CD integration.',
-    tags: ['Flask', 'MySQL', 'Docker', 'CI/CD'],
+    title: 'Two-Tier Flask Application on Amazon EKS',
+    description: 'Built and containerized a two-tier Flask application with a MySQL backend using separate Docker containers, published to Docker Hub, and deployed to Amazon EKS using Kubernetes and Helm with CI/CD automation through Jenkins and GitHub.',
+    tags: ['Flask', 'MySQL', 'Docker', 'Kubernetes', 'Helm', 'Jenkins'],
   },
   {
     icon: Code2,
     title: 'Django Notes App',
-    description: 'Developed and deployed a full-stack notes application using Django, React, and MySQL, with a Jenkins CI/CD pipeline and Docker containerization.',
+    description: 'Developed and deployed a full-stack application using Django, React, and MySQL. Built a Jenkins CI/CD pipeline and containerized the application with Docker for consistent deployments.',
     tags: ['Django', 'React', 'MySQL', 'Jenkins', 'Docker'],
   },
   {
     icon: ServerCog,
     title: 'Spring Boot CI/CD Pipeline',
-    description: 'Designed a Jenkins and Maven CI/CD pipeline for automated build and deployment of a Spring Boot application on AWS.',
+    description: 'Designed a Jenkins and Maven pipeline for automated build and deployment of a Spring Boot application on AWS.',
     tags: ['Spring Boot', 'Jenkins', 'Maven', 'AWS'],
   },
   {
     icon: Sparkles,
     title: 'Next.js Application Deployment',
-    description: 'Deployed a modern Next.js web application on Vercel with GitHub Actions providing the CI/CD workflow.',
-    tags: ['Next.js', 'Vercel', 'GitHub Actions'],
-  },
-  {
-    icon: ServerCog,
-    title: 'Spring Boot Deployment on Fly.io',
-    description: 'Containerized a Spring Boot application with Docker and deployed it to Fly.io through GitHub Actions.',
-    tags: ['Spring Boot', 'Docker', 'GitHub Actions', 'Fly.io'],
+    description: 'Deployed a modern web application on Vercel with GitHub Actions integration for continuous deployment.',
+    tags: ['Vercel', 'GitHub Actions'],
   },
 ]
 
@@ -103,7 +94,7 @@ function Sidebar({ active, open, onClose }) {
         <div className="availability"><span /> Available for opportunities</div>
         <h1>Kashif Ali</h1>
         <p>DevOps Engineer</p>
-        <div className="gold-badge"><Code2 size={16} /> Building &amp; Learning</div>
+        <div className="gold-badge"><Code2 size={16} /> Automating reliable deliveryivery</div>
       </div>
       <nav>
         {navItems.map(([id, label, Icon]) => (
@@ -161,14 +152,14 @@ export default function App() {
         <section id="summary" className="hero">
           <div className="hero-glow" />
           <p className="kicker">HELLO, I'M KASHIF</p>
-          <h2>Turning ideas into useful digital <em>experiences.</em></h2>
+          <h2>Delivering reliable software with DevOps practices.</h2>
           <p className="hero-copy">
-            I’m Kashif Ali, a DevOps &amp; Cloud Engineer with hands-on experience in AWS,
-            CI/CD automation, infrastructure management, and production deployments. I build
-            scalable, reliable systems with Docker, Jenkins, GitHub Actions, and Ansible.
+            DevOps Engineer with hands-on experience designing CI/CD pipelines, containerizing applications, and managing cloud infrastructure across AWS, Vercel, and Fly.io.
+            Skilled in Docker, Kubernetes, Jenkins, GitHub Actions, and Ansible, with a track record of automating deployments and improving release reliability.
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#contact"><Mail size={18} /> Get in touch</a>
+            <a className="button secondary" href={resumeUrl} target="_blank" rel="noreferrer"><Download size={18} /> View CV</a>
             <a className="button secondary" href={resumeUrl} download="Kashif-Ali-Resume.pdf"><Download size={18} /> Download resume</a>
           </div>
           <div className="stats">
