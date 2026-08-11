@@ -111,7 +111,7 @@ function Sidebar({ active, open, onClose }) {
       </nav>
       <div className="sidebar-contact">
         <a href="tel:+923432397908"><Phone size={16} /> +92 343 2397908</a>
-        <a href={resumeUrl} target="_blank" rel="noreferrer"><Download size={16} /> View Resume</a>
+        <a href={resumeUrl} download="Kashif-Ali-Resume.pdf"><Download size={16} /> Download Resume</a>
         <a href="https://www.linkedin.com/in/kashif-ali-8917a7374/" target="_blank" rel="noreferrer"><Linkedin size={16} /> Connect on LinkedIn</a>
         <a href="https://github.com/kashif716" target="_blank" rel="noreferrer"><Github size={16} /> github.com/kashif716</a>
         <div className="socials">
@@ -165,7 +165,7 @@ export default function App() {
           </p>
           <div className="hero-actions">
             <a className="button primary" href="#contact"><Mail size={18} /> Get in touch</a>
-            <a className="button secondary" href={resumeUrl} target="_blank" rel="noreferrer"><Download size={18} /> View Resume</a>
+            <a className="button secondary" href={resumeUrl} download="Kashif-Ali-Resume.pdf"><Download size={18} /> Download Resume</a>
           </div>
           <div className="stats">
             <div><strong>Code</strong><span>Practical projects</span></div>
